@@ -25,7 +25,6 @@ public class Problem1 {
         while (index < max) {
             for (int num : nums) {
                 if (index % num == 0) {
-                    System.out.println(index);
                     result += index;
                     break;
                 }
