@@ -76,3 +76,24 @@ _Problems will be listed as they are solved._
           ```
   _Note: Using large emaciated numbers may cause a memory overflow, this code can only be used for reference._
 
+* ### [Problem 4](src/main/java/io/github/danildzambrana/projecteuler/problem4/Problem4.java)
+    * This solution is based in Palindrome Sequence. According to Wikipedia Entry
+      for [Palindrome](https://en.wikipedia.org/wiki/Palindrome): _"palindrome is a word, number, phrase, or other
+      sequence of characters which reads the same backward as forward, such as madam or racecar."_
+
+      You can take the following algorithm as a reference.
+      ```java
+      public class PalindromeExample {
+        public boolean isPalindrome(String value) {
+            StringBuilder builder = new StringBuilder();
+
+            char[] chars = value.toCharArray();
+            for (int i = chars.length-1; i >= 0; i--) {
+                builder.append(chars[i]);
+            }
+
+            return builder.toString().equalsIgnoreCase(value);
+        }
+      }
+      ```
+    
